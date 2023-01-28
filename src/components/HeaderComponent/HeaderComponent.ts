@@ -1,4 +1,4 @@
-import Component from "../Component.js";
+import Component from "../Component/Component.js";
 
 class HeaderComponent extends Component {
   constructor(parentElement: Element) {
@@ -7,7 +7,8 @@ class HeaderComponent extends Component {
 
   render() {
     super.render();
-    this.domElement.innerHTML = `<h1></h1>`;
+    const pokedexLogo = "img/pokedex_logo_mobile.png";
+    this.domElement.innerHTML = `<img src="${pokedexLogo}" with="277" height="50">`;
   }
 }
 
