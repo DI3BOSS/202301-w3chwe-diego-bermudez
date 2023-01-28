@@ -1,5 +1,5 @@
-import HeaderComponent from "./components/Component/HeaderComponent/HeaderComponent.js";
-import PageComponent from "./components/PageComponent/PageComponent.js";
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent.js";
+import PageComponent from "./components/PageComponent/pageComponent.js";
 
 const mainContainer = new PageComponent(document.querySelector(".root"));
 mainContainer.render();
