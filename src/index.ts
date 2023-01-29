@@ -13,4 +13,4 @@ const cardListComponent = new CardListComponent(mainContainer.domElement);
 cardListComponent.render();
 
 const cardComponent = new CardComponent(cardListComponent.domElement);
-cardComponent.render();
+await cardComponent.getPokeInfo(1);

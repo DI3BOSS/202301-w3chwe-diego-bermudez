@@ -1,18 +1,31 @@
 import Component from "../Component/Component.js";
+import type { CardComponentStructure } from "../types.js";
 
 class CardComponent extends Component {
+  image: string;
+  name: string;
+
   constructor(parentElement: Element) {
     super(parentElement, "pokedex--card card-list--card", "li");
   }
 
+  getPokeInfo = async (number: number) => {
+    const pokeApiUrl = "https://pokeapi.co/api/v2/pokemon/";
+    const response = await fetch(`${pokeApiUrl}${number}`);
+    const pokemonImage = (await response.json()) as Record<string, any>;
+    this.image = pokemonImage.sprites.versions["generation-v"]["black-white"]
+      .animated.front_default as string;
+    this.name = pokemonImage.name as string;
+
+    this.render();
+  };
+
   render() {
     super.render();
-    const pokedexLogo =
-      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/shiny/25.gif";
-    const logoHeight = "100%";
-    const logoWidth = "100%";
-    this.domElement.innerHTML = `<img src="${pokedexLogo}" with="${logoWidth}" height="${logoHeight}">
-    <h2> Pikachu </h3>`;
+    const logoHeight = "50%";
+    const logoWidth = "50%";
+    this.domElement.innerHTML = `<img src="${this.image}" with="${logoWidth}" height="${logoHeight}">
+    <h2>${this.name}</h3>`;
   }
 }
 

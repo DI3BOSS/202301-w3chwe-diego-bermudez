@@ -1,10 +1,1 @@
-{
-  "version": 3,
-  "sourceRoot": "",
-  "sources": [
-    "../src/sass/styles.scss"
-  ],
-  "names": [],
-  "mappings": "AAAA;EACE",
-  "file": "styles.css"
-}
+{"version":3,"sourceRoot":"","sources":["../src/sass/reset/_reset.scss","../src/sass/styles.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE;;;AAGF;AAAA;AAAA;EAGE;;;AAGF;AAAA;EAEE;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;ACtBF;EACE;;;AAGF;EACE;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA","file":"styles.css"}
