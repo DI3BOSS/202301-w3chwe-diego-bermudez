@@ -8,7 +8,7 @@ class HeaderComponent extends Component {
   render() {
     super.render();
     const pokedexLogo = "img/pokedex_logo_mobile.png";
-    this.domElement.innerHTML = `<img src="${pokedexLogo}" with="277" height="50">`;
+    this.domElement.innerHTML = `<img src="${pokedexLogo}" with="277" height="50" alt="Pokedex by di3boss" class="main-title">`;
   }
 }
 
