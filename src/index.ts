@@ -12,7 +12,7 @@ headerContainer.render();
 const cardListComponent = new CardListComponent(mainContainer.domElement);
 cardListComponent.render();
 
-const numberOfPokeCardsByPage = 21;
+const numberOfPokeCardsByPage = 151;
 let cardIndexInPage = 1;
 const renderPokeCardsById = new Array(numberOfPokeCardsByPage).fill("");
 

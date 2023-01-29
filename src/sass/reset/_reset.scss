@@ -4,6 +4,11 @@
 
 body {
   margin: 0;
+  background: linear-gradient(
+    75deg,
+    rgba(253, 253, 253, 1) 25%,
+    rgba(238, 238, 238, 1) 100%
+  );
 }
 
 h1,

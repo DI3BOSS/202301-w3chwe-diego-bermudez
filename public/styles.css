@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  background: linear-gradient(75deg, rgb(253, 253, 253) 25%, rgb(238, 238, 238) 100%);
 }
 
 h1,
@@ -26,10 +27,27 @@ button {
   padding: 0;
 }
 
+.pokedex--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.3);
+  border-bottom: 5px solid rgba(51, 51, 51, 0.2);
+  background: #fff;
+}
+.pokedex--card-list {
+  padding-top: 20px;
+}
+
 .main-title {
   margin: 20px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -41,13 +59,75 @@ button {
   width: 270px;
   padding: 20px;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 15px 4px 15px 4px;
+  border-bottom: 5px solid rgba(51, 51, 51, 0.2);
+  border-right: 3px solid rgba(51, 51, 51, 0.2);
   color: white;
   font-family: Comfortaa, cursive;
   font-weight: 400;
+  box-shadow: 5px 0px 10px rgba(51, 51, 51, 0.3);
+  transition: transform 0.1s;
+}
+.card-list--card:hover {
+  transform: scale(1.08);
+}
+.card--pokemon {
+  display: flex;
+  align-items: center;
 }
 .card--pokemon-name {
   text-transform: capitalize;
+  padding: 5px;
+  text-shadow: 5px 0px 10px rgba(51, 51, 51, 0.3);
+}
+.card--pokemon-info {
+  display: flex;
+  gap: 20px;
+  padding: 5px;
+  text-shadow: 5px 0px 10px rgba(51, 51, 51, 0.3);
+}
+.card--pokemon-type {
+  text-transform: capitalize;
+}
+
+.pokemon-type-grass {
+  background: #69c06b;
+}
+.pokemon-type-fire {
+  background: #f46a5b;
+}
+.pokemon-type-water {
+  background: #00bbbb;
+}
+.pokemon-type-bug {
+  background: #bb977c;
+}
+.pokemon-type-rock {
+  background: #767e86;
+}
+.pokemon-type-electric {
+  background: #f7bd21;
+}
+.pokemon-type-poison {
+  background: #ce63b5;
+}
+.pokemon-type-ground {
+  background: #bd960a;
+}
+.pokemon-type-fairy {
+  background: #d8a3b6;
+}
+.pokemon-type-fighting {
+  background: #555555;
+}
+.pokemon-type-psychic {
+  background: #a08637;
+}
+.pokemon-type-ice {
+  background: #6695cb;
+}
+.pokemon-type-dragon {
+  background: #f2a350;
 }
 
 /*# sourceMappingURL=styles.css.map */
