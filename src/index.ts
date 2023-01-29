@@ -1,7 +1,7 @@
 import CardComponent from "./components/PokemonCardComponent/PokemonCardComponent.js";
 import CardListComponent from "./components/CardListComponent/CardListComponent.js";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent.js";
-import PageComponent from "./components/PageComponent/pageComponent.js";
+import PageComponent from "./components/pageComponent/pageComponent.js";
 
 const mainContainer = new PageComponent(document.querySelector(".root"));
 mainContainer.render();
