@@ -40,7 +40,7 @@ class CardComponent extends Component {
 
     <h2 class="card--pokemon-name">${this.name}</h3>
     <div class="card--pokemon-info"><span class="card--pokemon-id">#${this.id}</span> 
-    <span class="card--pokemon-type">Type: ${this.type}</span> </div>`;
+    <span class="card--pokemon-type">type: ${this.type}</span> </div>`;
 
     this.domElement.classList.add(`pokemon-type-${this.type}`);
   }
