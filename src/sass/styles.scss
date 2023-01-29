@@ -41,9 +41,9 @@
       font-family: Comfortaa, cursive;
       font-weight: 400;
       box-shadow: 5px 0px 10px rgba(51, 51, 51, 0.3);
-      transition: transform 0.3s;
+      transition: transform 0.1s;
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.08);
       }
     }
   }
@@ -101,7 +101,7 @@
       background: #555555;
     }
     &-psychic {
-      background: #9e7d17;
+      background: #a08637;
     }
     &-ice {
       background: #6695cb;
