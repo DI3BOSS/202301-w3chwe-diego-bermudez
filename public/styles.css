@@ -43,5 +43,8 @@ button {
   border-radius: 10px;
   color: white;
 }
+.card--pokemon-name {
+  text-transform: capitalize;
+}
 
 /*# sourceMappingURL=styles.css.map */

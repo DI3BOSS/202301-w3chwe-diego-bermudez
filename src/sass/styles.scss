@@ -4,18 +4,24 @@
   margin: 20px;
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 100vw;
-  justify-content: center;
+.card {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100vw;
+    justify-content: center;
 
-  &--card {
-    background: rgb(61, 61, 164);
-    width: 270px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    color: white;
+    &--card {
+      background: rgb(61, 61, 164);
+      width: 270px;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+  }
+
+  &--pokemon-name {
+    text-transform: capitalize;
   }
 }
